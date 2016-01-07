@@ -1,2 +1,16 @@
-<h1>StaticPages#help</h1>
-<p>Find me in app/views/static_pages/help.html.erb</p>
+<% provide(:title, "Help") %>
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= yield(:title) %> | Ruby On Rails Tutorial App</title>
+</head>
+<body>
+
+<h1>Ruby On Rails Tutorial Page</h1>
+<p>This is the help page for Ruby on rails tutorial</p>
+To go back to the Home page, click on this link<em> <%= link_to "Ruby on Rails Tutoria Home Page", static_pages_home_path %></em>
+<p>
+<div class="help1"><h4> Thanks you for visiting!</h4</div>
+</p>
+</body>
+</html>

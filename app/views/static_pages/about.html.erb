@@ -1,0 +1,18 @@
+<% provide(:title, "About") %>
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= yield(:title) %> | Ruby On Rails Tutorial App</title>
+</head>
+<body>
+<h1> About Page</h1>
+<p> This page is practise segment for Ruby On Raila Tutorial.</P>
+<ul>
+<li>To visit the Home page,click here <em><%= link_to "Ruby On Rails Tutorial Home Page", static_pages_home_path %></em></li>
+<li>For Help page, click here<em><%= link_to "Ruby On Rails Tutorial's Help Page", static_pages_help_path %>_</li>
+</ul>
+<p>
+Thanks for Browsing!
+</p>
+</body>
+</html>
