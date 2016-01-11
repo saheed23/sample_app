@@ -10,6 +10,7 @@ class UsersController < ApplicationController
 	def create
 	@user = User.new(user_params)
 	if @user.save
+		log_in @user
 		flash[:success] = "Welcome to the Sample App!"
 		redirect_to @user
 	# handle a successful save
@@ -18,6 +19,9 @@ class UsersController < ApplicationController
 	end
 	end
 
+	def edit
+		@user = User.find(params[:id])
+		end
 
    private
          #We are whitelisting here
